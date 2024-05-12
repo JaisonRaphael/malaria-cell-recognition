@@ -33,8 +33,8 @@ To develop a deep neural network for Malaria infected cell recognition and to an
 
 ## PROGRAM
 
-##  Developed by: B.S.AMRUTHA VARSHNI
-## Register no: 212222040007
+##  Developed by: JAISON RAPHAEL.V
+## Register no: 212221230038
 
 **importing libraries**
 ```python
@@ -146,7 +146,7 @@ results = model.fit(train_image_gen,epochs=5,validation_data=test_image_gen)
 **metrics**
 ```python
 losses = pd.DataFrame(model.history.history)
-print("B.S.AMRUTHA VARSHNI 21222204007")
+print("JAISON RAPHAEL.V 212221230038")
 losses[['loss','val_loss']].plot()
 ```
 ```python
@@ -165,7 +165,7 @@ pred=bool(model.predict(img.reshape(1,130,130,3))<0.5 )
 plt.title("Model prediction: "+("Parasitized" if pred
     else "Un Infected")+"\nActual Value: "+str(dir_))
 plt.axis("off")
-print("B.S.AMRUTHA VARSHNI 21222204007")
+print("JAISON RAPHAEL.V 212221230038")
 plt.imshow(img)
 plt.show()
 ```
@@ -174,7 +174,7 @@ model.evaluate(test_image_gen)
 pred_probabilities = model.predict(test_image_gen)
 test_image_gen.classes
 predictions = pred_probabilities > 0.5
-print("B.S.AMRUTHA VARSHNI 21222204007")
+print("JAISON RAPHAEL.V 212221230038")
 print(classification_report(test_image_gen.classes,predictions))
 confusion_matrix(test_image_gen.classes,predictions)
 ```
@@ -183,17 +183,17 @@ confusion_matrix(test_image_gen.classes,predictions)
 
 ### Training Loss, Validation Loss Vs Iteration Plot
 
-![image](https://github.com/Amruthavarshnibs/malaria-cell-recognition/assets/119103704/343c2bc7-7ea0-4b2c-9bdb-355dbb819d52)
+![gpu3](https://github.com/JaisonRaphael/malaria-cell-recognition/assets/94165957/04ea1269-804d-486a-a563-3d1aaf245fe6)
 
 
 ### Classification Report and Confusion Matrix
 
-![image](https://github.com/Amruthavarshnibs/malaria-cell-recognition/assets/119103704/b1e05c4d-7246-4285-be1d-8813401d7bfc)
+![gpu2](https://github.com/JaisonRaphael/malaria-cell-recognition/assets/94165957/3a2dc7d4-007d-484f-b76a-feba07b03755)
 
 
 ### New Sample Data Prediction
 
-![image](https://github.com/Amruthavarshnibs/malaria-cell-recognition/assets/119103704/157bf9de-625e-419c-ba15-0332a252f2a9)
+![gpu1](https://github.com/JaisonRaphael/malaria-cell-recognition/assets/94165957/c91921fa-1ca4-44ce-a0d7-bbbd4bc90ccb)
 
 
 ## RESULT
